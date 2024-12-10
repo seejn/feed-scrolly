@@ -1,0 +1,72 @@
+[
+    {
+        "feedImage": "couple-riding-bicycles-underneath-tree.webp",
+        "caption": "Enjoying a sunny day!",
+        "avatar": "boy.png",
+        "user": {
+            "firstname": "John",
+            "lastname": "Doe"
+        },
+        "postedAt": "2024-12-10T10:00:00Z"
+    },
+    {
+        "feedImage": "Nature-View.webp",
+        "caption": "Nature's beauty captured.",
+        "avatar": "girl.png",
+        "user": {
+            "firstname": "Jane",
+            "lastname": "Smith"
+        },
+        "postedAt": "2024-12-09T15:30:00Z"
+    },
+    {
+        "feedImage": "trip.webp",
+        "caption": "Throwback to an amazing trip!",
+        "avatar": "girl.png",
+        "user": {
+            "firstname": "Alice",
+            "lastname": "Brown"
+        },
+        "postedAt": "2024-12-08T18:45:00Z"
+    },
+    {
+        "feedImage": "splash_stam_2.webp",
+        "caption": "Delicious homemade meal.",
+        "avatar": "boy.png",
+        "user": {
+            "firstname": "Bob",
+            "lastname": "Wilson"
+        },
+        "postedAt": "2024-12-07T12:20:00Z"
+    },
+    {
+        "feedImage": "weekend-vibes.webp",
+        "caption": "Weekend vibes!",
+        "avatar": "girl.png",
+        "user": {
+            "firstname": "Emily",
+            "lastname": "Johnson"
+        },
+        "postedAt": "2024-12-06T09:00:00Z"
+    },
+    {
+        "feedImage": "workout-fitness-center.webp",
+        "caption": "Morning workout done!",
+        "avatar": "boy.png",
+        "user": {
+            "firstname": "Chris",
+            "lastname": "Davis"
+        },
+        "postedAt": "2024-12-05T07:15:00Z"
+    },
+    {
+        "feedImage": "cozy-reading.webp",
+        "caption": "Cozy reading corner.",
+        "avatar": "girl.png",
+        "user": {
+            "firstname": "Mia",
+            "lastname": "Hernandez"
+        },
+        "postedAt": "2024-12-02T14:10:00Z"
+    }
+]
