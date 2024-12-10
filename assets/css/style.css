@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    height: 100vh;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    font-family: Arial, sans-serif;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#feeds {
+    height: 100%;
+    position: relative;
+    width: min(100%,350px);
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #2c3e50, #4ca1af); /* Darker gradient background */
+  min-height: 100vh;
+}
+
+.glass-card {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.15); /* Slightly higher opacity for better contrast */
+  backdrop-filter: blur(15px); /* Stronger blur effect for a cleaner glass effect */
+  border-radius: 20px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3); /* Darker shadow for contrast */
+  width: 100%;
+  max-width: 400px; /* Card width limit */
+  overflow: hidden;
+  color: #272727; /* Light text color for better visibility */
+  text-align: left;
+  padding: 25px;
+  user-select: none;
+  transition: all 0.7s ease-in-out;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 15px;
+}
+
+.profile-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.5); /* Slight border for image */
+}
+
+.username {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #ffcc00; /* Yellow accent color for the username */
+  margin: 0;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Text shadow to improve contrast */
+}
+
+.timestamp {
+  font-size: 0.9rem;
+  opacity: 0.85;
+  margin: 0;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); /* Subtle shadow for better readability */
+}
+
+.feed-image img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.caption {
+  font-size: 1rem;
+  line-height: 1.6;
+  opacity: 0.95;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); /* Add shadow for clearer visibility */
+}
+
+[data-feed="feed1"] {
+    transform: translateY(-25%) scale(0.7);
+    opacity: 0.3;
+    z-index: 0;
+    pointer-events: all;
+}
+
+[data-feed="feed2"] {
+    transform: translateY(25%) scale(1);
+    z-index: 1;
+    opacity: 1;
+    pointer-events: all;
+}
+
+[data-feed="feed3"] {
+    transform: translateY(75%) scale(0.7);
+    opacity: 0.3;
+    z-index: 0;
+    pointer-events: all;
+}
+
+[data-feed="feed4"] {
+    opacity: 0;
+    pointer-events: none;
+    z-index: -1;
+    transform: translateY(25%) scale(0);
+}
