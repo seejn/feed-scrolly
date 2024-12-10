@@ -47,11 +47,15 @@ const handleMouseMove = async (e) => {
     if (!isDown) return;
     endY = e.pageY;
     const dragThreshold = 30;
+
+    // 30 pixel dragThreshold to trigger animation 
     if (Math.abs(endY - startY) > dragThreshold) {
         const direction = startY < endY ? "up" : "down";
         animateRotation(direction);
 
         try {
+            // to set fetchedData to hidden feed-card on mouseMove
+
             const hiddenFeed = document.querySelector("div[data-feed=feed4]");
             const data = await getFeed(1);
             insertDataInDOM(data[0], hiddenFeed);
@@ -84,6 +88,7 @@ const initialization = async () => {
         const feedHTMLCollection = document.querySelectorAll("div[data-feed]");
         const feedContainers = Array.from(feedHTMLCollection);
 
+        // to set fetchedData to all feed-card on initialization
         feedContainers.forEach((feed, index) => {
             insertDataInDOM(data[index], feed);
         });
