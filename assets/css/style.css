@@ -7,7 +7,7 @@ body {
     -ms-overflow-style: none;
     scrollbar-width: none;
     height: 100vh;
-    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    background: linear-gradient(135deg, #2c3e50, #4ca1af);
     font-family: Arial, sans-serif;
 }
 body::-webkit-scrollbar {
@@ -23,12 +23,6 @@ body::-webkit-scrollbar {
     overflow: hidden;
 }
 
-body {
-  font-family: 'Arial', sans-serif;
-  background: linear-gradient(135deg, #2c3e50, #4ca1af); /* Darker gradient background */
-  min-height: 100vh;
-}
-
 .glass-card {
   position: absolute;
   background: rgba(255, 255, 255, 0.15); /* Slightly higher opacity for better contrast */
@@ -38,7 +32,7 @@ body {
   width: 100%;
   max-width: 400px; /* Card width limit */
   overflow: hidden;
-  color: #272727; /* Light text color for better visibility */
+  color: #f7f5ff; /* Light text color for better visibility */
   text-align: left;
   padding: 25px;
   user-select: none;
@@ -74,6 +68,7 @@ body {
   margin: 0;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); /* Subtle shadow for better readability */
   padding: 4px 0;
+  font-weight: bolder;
 }
 
 .feed-image img {
@@ -89,6 +84,7 @@ body {
   opacity: 0.95;
   margin: 20px 0;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); /* Add shadow for clearer visibility */
+  font-weight: bolder;
 }
 
 [data-feed="feed1"] {
