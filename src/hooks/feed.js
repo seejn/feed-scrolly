@@ -1,7 +1,7 @@
 import formatRelativeTime from "../utils/relativeTime.js";
 
 const feeds = async () => {
-    const response = await fetch('../data/feeds.json');
+    const response = await fetch('./src/data/feeds.json');
     const data = await response.json();
     let initialIndex = 0;
     
@@ -15,8 +15,8 @@ const feeds = async () => {
         const responseData = slicedData.map(data => (
             {
                 ...data,
-                feedImage: `../assets/images/feed-images/${data["feedImage"]}`,
-                avatar: `../assets/images/avatar/${data["avatar"]}`,
+                feedImage: `./src/assets/images/feed-images/${data["feedImage"]}`,
+                avatar: `./src/assets/images/avatar/${data["avatar"]}`,
                 postedAt: formatRelativeTime(data["postedAt"])
             }
         ));
