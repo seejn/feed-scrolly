@@ -1,7 +1,7 @@
 # FEED-SCROLLY [ Scrollable Feed ] 
 This project implements a dynamic scrollable feed feature using mouse drag events. Data is fetched from data/feeds.json, and feed cards are rendered dynamically by recycling four feed components. The project utilizes a debounced mousemove event handler to enhance performance and ensure smooth scrolling interactions.
 
-live preview: https://feed-scrolly.vercel.app/
+Live preview: https://feed-scrolly.vercel.app/
 
 ## INSTALLATION
 ```sh
